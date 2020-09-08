@@ -1,0 +1,31 @@
+<div style="color:white" class="alert alert-success" role="alert" style="background-color: rgba(5, 1, 12, 0.61)">
+    <h4 style="color: rgb(107, 248, 42);" class="alert-heading">Dobro došli!</h4>
+    <p style="color: white;">Miller-Rabinov test provjerava da li je broj prost ili ne u zavisnosti od broja unešenih baza. Test radi na sljedeći način:</p>
+    <p style="color: white;">Unese se ispitivani broj i broj baza. Program vraća dvije vrijednosti true ili false. Ako je rezultat true onda je ispitivani broj prost, u suprotnom broj je složen.</p>
+    <h5 style="color:rgb(107, 248, 42) ;" class="alert-heading">Miller-Rabinov test</h5>
+<br>
+<label style="color: white;" for="num1">Unesite broj</label>
+<br>
+<input type="text" [(ngModel)]="firstNumber">
+<br>
+<br>
+
+<label style="color: white;" for="num2">Unesite broj baza</label>
+<br>
+<input type="text" [(ngModel)]="secondNumber">
+<br>
+<br>
+
+<button class="btn btn-primary" (click) = "milertest()">Calculate</button> 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<p style="color: white;" class="mb-0">Koristite sa zadovoljstvom.</p>
+</div>

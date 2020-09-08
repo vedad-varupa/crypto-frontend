@@ -1,0 +1,66 @@
+<div style="color: rgb(250, 245, 245);" class="alert alert-success" role="alert" style="background-color: black;">
+    <h4 class="alert-heading">Dobro došli!</h4>
+
+    <p style="color: rgb(255, 251, 251); font-family: 'Courier New', Courier, monospace;"> <br>
+        Prošireni Euklidov algoritam za određivanje najvećeg zajedničkog djelitelja radi na sljedeći način:<br>
+        1. Unesite brojeve a i b u prazna polja. <br>
+        2. Kliknite na dugme <button class="btn btn-primary">Calculate</button><br>
+        3. Algoritam izračunava nzd(a,b).</p><br>
+    <br>
+    <label style="color: white;" for="num1">Unesite prvi nenegativan broj</label>
+    <br>
+    <input type="text" [(ngModel)]="firstNumber">
+
+    <br>
+    <br>
+
+    <label style="color: white;" for="num2">Unesite drugi nenegativan broj</label>
+    <br>
+    <input type="text" [(ngModel)]="secondNumber">
+    <br>
+    <br>
+    <button class="btn btn-primary" (click)="calculateExtEucGcd()">Calculate</button>
+    <br>
+    <br>
+
+    <table border = '5px'>
+        <thead>
+            <tr border='5px'>
+                <th width="15%">q</th>
+                <th width="15%">x0</th>
+                <th width="15%">x1</th>
+                <th width="15%">x2</th>
+                <th width="15%">y0</th>
+                <th width="15%">y1</th>
+                <th width="15%">y2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let element of lista">
+                <th >{{ element.q }}</th>
+                <th>{{ element.x0 }}</th>
+                <th>{{ element.x1 }}</th>
+                <th>{{ element.x2 }}</th>
+                <th>{{ element.y0 }}</th>
+                <th>{{ element.y1 }}</th>
+                <th>{{ element.y2 }}</th>
+            </tr>
+        </tbody> 
+    </table>
+    <br>
+    <table border = '5px'>
+        <tbody>
+            <tr>
+                {{result}}
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <p class="mb-0">Koristite sa zadovoljstvom.</p>
+</div>

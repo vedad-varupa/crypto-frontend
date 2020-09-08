@@ -1,0 +1,23 @@
+input {
+    background-color: rgb(243, 247, 243);
+}
+th {
+    overflow: unset;
+    border: 3px solid rgb(252, 251, 251);
+}
+tr{
+    border: 3px;
+}
+
+thead {
+    border: 3px solid rgb(253, 253, 253);
+    color: rgb(17, 243, 17);
+}
+tbody {
+    border: 3px solid black;
+    color:red;
+}
+tfoot {
+    border: 3px solid black;
+    color:red
+}

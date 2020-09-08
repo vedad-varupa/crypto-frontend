@@ -1,0 +1,42 @@
+<div style="color: rgb(252, 250, 250);" class="alert alert-success" role="alert" style="background-color: rgb(4, 6, 8);">
+  <h4 style="color: rgb(252, 248, 248);" class="alert-heading">Dobro došli!</h4>
+  <p style="text-align:justify; color: white; font-family: 'Courier New', Courier, monospace;">Najveći zajednički djelitelj dva broja je
+    najveći broj koji dijeli oba ta broja.
+    Ako je takav broj jednak jedinici onda se za ta dva broja (a i b) kaže da su relativno prosta i zapisuje:
+    nzd(a,b)=1.
+    Prost broj je relativno prost sa svim brojevima osim sa svojim sadržiocima.
+    Jedna od mogućnosti jest faktorizacija brojeva (a i b) na proste faktore.
+    Kako je teškoća faktorizacije velikih prirodnih brojeva jedna od najvažnijih činjenica u algoritamskoj teoriji
+    brojeva,
+    jasno je da je potrebna bolja metoda za računanje najvećeg zajedničkog djelitelja. <br>
+    Euklidov algoritam je efikasan algoritam za računanje najvećeg zajedničkog djelitelja dva cijela broja i on ne
+    zahtijeva faktorizaciju tih brojeva.
+
+    Euklidov algoritam za određivanje najvećeg zajedničkog djelitelja radi na sljedeći način:<br>
+    1. Unesite brojeve a i b u prazna polja <br>
+    2. Kliknite na dugme <button
+      class="btn btn-primary font-family: 'Courier New', Courier, monospace ">Calculate</button><br>
+    3. Algoritam izračunava nzd(a,b).</p><br>
+
+  <br>
+  <h3 style="color: rgb(250, 245, 245); font-family: 'Courier New', Courier, monospace;">Euklidov algoritam</h3>
+  <label for="num1" style="color: rgb(250, 246, 246); font-family: 'Courier New', Courier, monospace;">Unesite prvi nenegativan broj:
+    a</label>
+  <br>
+  <input type="text" [(ngModel)]="firstNumber">
+
+
+  <br>
+  <br>
+
+  <label for="num2" style="color: rgb(253, 251, 251); font-family: 'Courier New', Courier, monospace;">Unesite drugi nenegativan
+    broj: b</label>
+  <br>
+  <input type="text" [(ngModel)]="secondNumber">
+  <br>
+  <br>
+  <button class="btn btn-primary" (click)="calculateGcd()">Calculate</button><br>
+
+  <hr>
+  <p class="mb-0" style="color: rgb(253, 251, 251);">Koristite sa zadovoljstvom.</p>
+</div>
