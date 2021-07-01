@@ -1,0 +1,10 @@
+footer {
+    background-color: rgb(65, 65, 66);
+    
+}
+a {
+    color: white;
+}
+a:hover{
+    color: rgb(184, 241, 25)
+}

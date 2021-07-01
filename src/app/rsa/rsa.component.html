@@ -1,0 +1,32 @@
+<div style="color: rgb(248, 242, 242);" class="alert alert-success" role="alert" style="background-color: rgb(8, 5, 5);">
+    <h4 style="color:rgba(130, 250, 18, 0.993);" class="alert-heading">Dobro došli!</h4>
+    <p style="text-align:justify; color: white;">RSA algoritam razvili su Ronald Rivest, Adi Shamir i Leonard Adleman 1977. godine. RSA algoritam je jedan od prvih
+     praktičnih kriptografskih algoritama koji koristi ideju javnog ključa. Sigurnost algoritma temelji se na izračunavanju velikih prostih brojeva.
+     RSA algoritam prvenstveno je namjenjen šifrovanju podataka ali se danas koristi i u sistemima digitalnog potpisa. Široko je primjenjen u mnogim
+     sigurnosnim protokolima i sistemima elektronskog poslovanja. Tako da jedan dio ove web aplikacije čini upravo RSA algoritam. Dovoljno je samo
+     da unesemo tekst ili poruku koju želimo šifrirati, ostalo će implementirani algoritam u aplikaciji uraditi. Možemo napomenuti da ovaj algoritam bira proste 
+     brojeve p i q random sa nekoliko stotina cifara, pa daje sigurnost šifriranoj poruci. Algoritam radi jako brzo, tako da ćete šifriranu poruku dobiti za koju sekundu. 
+    </p>
+
+
+
+
+    <br>
+    <h5 style="color: rgb(247, 250, 245);">RSA Algoritam</h5>
+    <label style="color: rgb(250, 246, 246);" for="num1">Unesite tekst ili poruku koju želite šifrirati.</label>
+    <br>
+    <input style="color: white;" type="any" [(ngModel)]="firstNumber">
+    <br>
+    <br>
+    <button class="btn btn-primary" (click)="rsaalgorithm()">Calculate</button>
+    <br>
+    <table border="0.5">
+        <thead>
+            <tr style="color: white;" *ngFor="let item of items">
+                <td scope="row">{{item}}</td>
+            </tr>
+    </thead>
+    </table>
+    <hr>
+    <p style="color: rgb(250, 246, 246);" class="mb-0">Koristite sa zadovoljstvom.</p>
+</div>

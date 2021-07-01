@@ -1,0 +1,10 @@
+input{
+    background-color: rgb(8, 5, 5);
+    width: 1065px;
+    border: 0.5;
+    color: black;
+}
+td {
+    max-width: 1065px;
+    overflow: scroll;
+}
